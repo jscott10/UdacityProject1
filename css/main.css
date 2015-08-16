@@ -1,0 +1,163 @@
+body {
+	font-family: Lato, sans-serif;
+	font-weight: 400;
+	color: #747704;
+	margin-top: 20px;
+	transition: margin-top 0.5s;
+}
+
+.container {
+	min-width: 320px;
+	transition: width 0.5s;
+}
+
+.shadowed-image {
+	box-shadow: 2px 2px 10px #999;
+	margin: 0 auto;
+}
+
+.faded-text {
+	color: #bcbbbb;
+}
+
+.thin-text {
+	font-weight: 100;
+}
+
+/* Responsive styles */
+
+/* From Bootstrap docs: */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+.logo {
+	max-height: 80px;
+	transition: max-height 0.5s;
+	margin-top: 20px;
+	padding: 10px;
+	border: none;
+	border-radius: 50%;
+	box-shadow: -1em -0.3em 10px #999 inset;
+}
+
+hr {
+	border-top: 1px solid #bcbbbb;
+	margin-bottom: 20px;
+}
+
+.header-title {
+	font-weight: 100;
+	transition: font-weight 0.5s;
+	font-size: 40px;
+	transition: font-size 0.5s;
+}
+
+.header-subtitle {
+	font-weight: 300;
+	font-size: 15px;
+	transition: font-size 0.5s;
+}
+
+.featured-work {
+	margin: 20px 10px 10px;
+}
+
+.project-title {
+	font-size: 20px;
+	margin: 10px auto 2px;
+	transition: font-size 0.5s;
+}
+
+.project-link {
+	font-weight: 300;
+	font-size: 14px;
+	transition: font-size 0.5s;
+}
+
+/* From Bootstrap docs: */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	
+	body {
+		margin-top: 35px;
+		transition: margin-top 0.5s;
+	}
+	
+	.header-title {
+		font-size: 55px;
+		transition: font-size 0.5s;
+	}
+	
+	.header-subtitle {
+		font-size: 20px;
+		transition: font-size 0.5s;
+	}
+	hr {
+		border-top: 4px solid #bcbbbb;
+		margin-bottom: 40px;
+		transition: margin-bottom 0.5s;
+	}
+
+	.logo {
+		max-height: 105px;
+		transition: max-height 0.5s;
+	}
+
+	.project-title {
+		font-size: 24px;
+		margin-top: 10px;
+		transition: font-size 0.5s;
+	}
+
+	.project-link {
+		font-weight: 300;
+		font-size: 15px;
+		transition: font-size 0.5s;
+	}
+
+}
+
+/* From Bootstrap docs: */
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	body {
+		margin-top: 40px;
+		transition: margin-top 0.5s;
+	}
+	
+	.logo {
+		max-height: 120px;
+		transition: max-height 0.5s;
+	}
+
+	.header-title {
+		font-size: 64px;
+		transition: font-size 0.5s;
+	}
+	
+	.header-subtitle {
+		font-size: 24px;
+		transition: font-size 0.5s;
+	}
+	.project-title {
+		font-size: 40px;
+		margin: 10px auto 5px;
+		transition: font-size 0.5s;
+	}
+
+	.project-link {
+		font-weight: 300;
+		font-size: 18px;
+		transition: font-size 0.5s;
+	}
+}
+
+/* Large devices (1200px and up) */
+@media (min-width: 1200px) {
+	.container {
+		width: 1120px;
+		transition: width 0.5s;
+	}
+}
+
+
