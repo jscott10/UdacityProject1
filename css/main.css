@@ -69,9 +69,15 @@ hr {
 }
 
 .project-link {
+	height: 48px;
 	font-weight: 300;
 	font-size: 14px;
 	transition: font-size 0.5s;
+}
+
+.project-link a {
+	display: inline-block;
+	padding: 17px 0;
 }
 
 /* From Bootstrap docs: */
@@ -110,8 +116,8 @@ hr {
 	}
 
 	.project-link {
-		font-weight: 300;
-		font-size: 15px;
+		font-weight: 400;
+		font-size: 12px;
 		transition: font-size 0.5s;
 	}
 }
