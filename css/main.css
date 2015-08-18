@@ -124,7 +124,7 @@ hr {
 
 /* From Bootstrap docs: */
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 	body {
 		margin-top: 40px;
 	}
