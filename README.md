@@ -1,6 +1,8 @@
 # UdacityProject1
 Udacity Front End Developer Nanodegree - Project 1
 
+CORRECTED PER CODE REIVEW. ADDED SRCSET ATTRIBUTES TO IMAGES.
+
 Greetings!
 
 Just a few things to note:
