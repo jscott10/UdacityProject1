@@ -72,14 +72,14 @@ hr {
 	transition: font-size 0.5s;
 }
 
-.project-link {
+.project-location {
 	height: 48px;
 	font-weight: 300;
 	font-size: 14px;
 	transition: font-size 0.5s;
 }
 
-.project-link a {
+.project-location-link {
 	display: inline-block;
 	padding: 17px 0;
 }
@@ -117,7 +117,7 @@ hr {
 		font-size: 24px;
 	}
 
-	.project-link {
+	.project-location {
 		font-size: 12px;
 	}
 }
@@ -151,7 +151,7 @@ hr {
 		margin-bottom: 5px;
 	}
 
-	.project-link {
+	.project-location {
 		font-size: 18px;
 	}
 }
@@ -162,5 +162,3 @@ hr {
 		width: 1120px;
 	}
 }
-
-
