@@ -15,32 +15,45 @@
 		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 		<!-- Latest compiled and minified JavaScript-->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!-- Data for Modal -->
+		<script src="js/test.js"></script>
+
 		<script>
-			$(function () {
-				$('[data-toggle="tooltip"]').tooltip();
-				$('[data-toggle="myModal"]').modal();
+			$("document").ready( function() {
+				$(".modal-trigger").click( function() {
+					console.log("we're in");
+					console.log($(this));
+					setModalData($(this).attr("prog-id"));
+				});
 			});
-		</script>
+/*			$(function () {
+				$('[data-toggle="tooltip"]').tooltip();
+			});
+*/		</script>
 	</head>
 	<body>
 
 		<!-- Bootstrap modal -->
-		<div class="modal fade" id="myModal">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title">Modal title</h4>
-		      </div>
-		      <div class="modal-body">
-		        <p>One fine body&hellip;</p>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
+		<aside>
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h2 class="modal-title h3"></h2>
+						</div>
+						<div class="modal-body">
+							<img class="img-responsive project-image" src="">
+							<h3 class="subtitle h4"></h3>
+							<p><a class="modal-link" href="" target="_blank">View on GitHub</a></p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div><!-- /.modal-content -->
+				</div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+		</aside>
 
 		<div class="container">
 			<header>
@@ -78,9 +91,6 @@
 					</div>
 				</header>
 
-<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
 				<!-- projects -->
 				<div class="row text-center">
 					<div class="col-sm-4">
@@ -89,7 +99,7 @@
 								<img class="img-responsive shadowed-image" src="images/proj0-lg.jpg" srcset="images/proj0-lg.jpg 343w, images/proj0-md.jpg 296w, images/proj0-sm.jpg 220w" sizes="(min-width: 1200px) 343px, (min-width: 992px) 296px, (min-width: 768px) 220px, (min-width: 373px) 343px, calc(100vw - 30px)" alt="Screenshot of Project 0">
 								<h3 class="project-title text-uppercase">Project 0</h3>
 							</header>
-							<p class="project-location"><a class="project-location-link faded-text" href="https://github.com/jscott10/UdacityProject0" data-toggle="tooltip" title="https://github.com/jscott10/UdacityProject0" target="_blank">View project on gitHub</a></p>
+							<p class="project-location"><a class="project-location-link faded-text" title="More information about Project 0" href="#" data-toggle="modal" data-target="#myModal" prog-id="0">More Information</a></p>
 						</article>
 					</div>
 
@@ -99,7 +109,7 @@
 								<img class="img-responsive shadowed-image" src="images/proj1-lg.jpg" srcset="images/proj1-lg.jpg 343w, images/proj1-md.jpg 296w, images/proj1-sm.jpg 220w" sizes="(min-width: 1200px) 343px, (min-width: 992px) 296px, (min-width: 768px) 220px, (min-width: 373px) 343px, calc(100vw - 30px)" alt="Screenshot of Project 1">
 								<h3 class="project-title text-uppercase">Project 1</h3>
 							</header>
-							<p class="project-location"><a class="project-location-link faded-text" href="https://github.com/jscott10/UdacityProject1" data-toggle="tooltip" title="https://github.com/jscott10/UdacityProject1" target="_blank">View project on gitHub</a></p>
+							<p class="project-location"><a class="project-location-link faded-text" title="More information about Project 1" href="#" data-toggle="modal" data-target="#myModal" prog-id="1">More Information</a></p>
 						</article>
 					</div>
 
@@ -109,7 +119,7 @@
 								<img class="img-responsive shadowed-image" src="images/proj2-lg.jpg" srcset="images/proj2-lg.jpg 343w, images/proj2-md.jpg 296w, images/proj2-sm.jpg 220w" sizes="(min-width: 1200px) 343px, (min-width: 992px) 296px, (min-width: 768px) 220px, (min-width: 373px) 343px, calc(100vw - 30px)" alt="Project 2 Placeholder image - Random Flower">
 								<h3 class="project-title text-uppercase">Project 2</h3>
 							</header>
-							<p class="project-location"><a class="project-location-link faded-text" href="#" data-toggle="tooltip" title="Project 2 - Coming Soon!" target="_blank">View project on gitHub</a></p>
+							<p class="project-location"><a class="project-location-link faded-text" title="More information about Project 2" href="#" data-toggle="modal" data-target="#myModal" prog-id="2">More Information</a></p>
 						</article>
 					</div>
 				</div>
