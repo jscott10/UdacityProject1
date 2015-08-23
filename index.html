@@ -16,18 +16,18 @@
 		<!-- Latest compiled and minified JavaScript-->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<!-- Data for Modal -->
-		<script src="js/test.js"></script>
+		<script src="js/modal-data.js"></script>
 
 		<script>
 			$("document").ready( function() {
-				$(".modal-trigger").click( function() {
+				$('[data-toggle="tooltip"]').tooltip();
+				$(".project-location-link").click( function() {
 					console.log("we're in");
 					console.log($(this));
 					setModalData($(this).attr("prog-id"));
 				});
 			});
 /*			$(function () {
-				$('[data-toggle="tooltip"]').tooltip();
 			});
 */		</script>
 	</head>
