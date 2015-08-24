@@ -19,17 +19,13 @@
 		<script src="js/modal-data.js"></script>
 
 		<script>
-			$("document").ready( function() {
-				$('[data-toggle="tooltip"]').tooltip();
+			$(function() {
 				$(".project-location-link").click( function() {
-					console.log("we're in");
-					console.log($(this));
-					setModalData($(this).attr("prog-id"));
+					var project_index = $(this).attr("id");
+					setModalData(project_index);
 				});
 			});
-/*			$(function () {
-			});
-*/		</script>
+		</script>
 	</head>
 	<body>
 
@@ -39,13 +35,14 @@
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							<h2 class="modal-title h3"></h2>
+							<button type="button" class="close" data-dismiss="modal"><span>x</span></button>
+							<h2 class="h3"><span class="modal-title ">&nbsp;</span></h2>
 						</div>
 						<div class="modal-body">
-							<img class="img-responsive project-image" src="">
-							<h3 class="subtitle h4"></h3>
-							<p><a class="modal-link" href="" target="_blank">View on GitHub</a></p>
+							<img class="img-responsive project-image" src="#" alt=" ">
+							<h3 class="h4"><span class="subtitle">&nbsp;</span></h3>
+							<p><span class="description">&nbsp;</span></p>
+							<p><a class="modal-link" href="#" target="_blank">View on GitHub</a></p>
 						</div>
 						<div class="modal-footer">
 							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -55,6 +52,7 @@
 			</div><!-- /.modal -->
 		</aside>
 
+		<!-- Page content -->
 		<div class="container">
 			<header>
 				<div class="row banner">
@@ -99,7 +97,7 @@
 								<img class="img-responsive shadowed-image" src="images/proj0-lg.jpg" srcset="images/proj0-lg.jpg 343w, images/proj0-md.jpg 296w, images/proj0-sm.jpg 220w" sizes="(min-width: 1200px) 343px, (min-width: 992px) 296px, (min-width: 768px) 220px, (min-width: 373px) 343px, calc(100vw - 30px)" alt="Screenshot of Project 0">
 								<h3 class="project-title text-uppercase">Project 0</h3>
 							</header>
-							<p class="project-location"><a class="project-location-link faded-text" title="More information about Project 0" href="#" data-toggle="modal" data-target="#myModal" prog-id="0">More Information</a></p>
+							<p class="project-location"><a class="project-location-link faded-text" title="More information about Project 0" href="#" data-toggle="modal" data-target="#myModal" id="0">More Information</a></p>
 						</article>
 					</div>
 
@@ -109,7 +107,7 @@
 								<img class="img-responsive shadowed-image" src="images/proj1-lg.jpg" srcset="images/proj1-lg.jpg 343w, images/proj1-md.jpg 296w, images/proj1-sm.jpg 220w" sizes="(min-width: 1200px) 343px, (min-width: 992px) 296px, (min-width: 768px) 220px, (min-width: 373px) 343px, calc(100vw - 30px)" alt="Screenshot of Project 1">
 								<h3 class="project-title text-uppercase">Project 1</h3>
 							</header>
-							<p class="project-location"><a class="project-location-link faded-text" title="More information about Project 1" href="#" data-toggle="modal" data-target="#myModal" prog-id="1">More Information</a></p>
+							<p class="project-location"><a class="project-location-link faded-text" title="More information about Project 1" href="#" data-toggle="modal" data-target="#myModal" id="1">More Information</a></p>
 						</article>
 					</div>
 
@@ -119,7 +117,7 @@
 								<img class="img-responsive shadowed-image" src="images/proj2-lg.jpg" srcset="images/proj2-lg.jpg 343w, images/proj2-md.jpg 296w, images/proj2-sm.jpg 220w" sizes="(min-width: 1200px) 343px, (min-width: 992px) 296px, (min-width: 768px) 220px, (min-width: 373px) 343px, calc(100vw - 30px)" alt="Project 2 Placeholder image - Random Flower">
 								<h3 class="project-title text-uppercase">Project 2</h3>
 							</header>
-							<p class="project-location"><a class="project-location-link faded-text" title="More information about Project 2" href="#" data-toggle="modal" data-target="#myModal" prog-id="2">More Information</a></p>
+							<p class="project-location"><a class="project-location-link faded-text" title="More information about Project 2" href="#" data-toggle="modal" data-target="#myModal" id="2">More Information</a></p>
 						</article>
 					</div>
 				</div>
