@@ -19,6 +19,11 @@ body {
 	margin: 0 auto;
 }
 
+/* Modal hero image */
+.project-image {
+	margin: 0 auto;
+}
+
 /* Responsive styles */
 
 /* From Bootstrap docs: */
